@@ -8,19 +8,19 @@ if(isset($_REQUEST['login']))
 	$password = sha1($_REQUEST['password']);
 
 //recaptcha
-	if(isset($_REQUEST['g-recaptcha-response']))
-	{
-    	$captcha = $_REQUEST['g-recaptcha-response'];
-	}
-	if(!$captcha)
-	{
-		echo "<script type='text/javascript'> alert('Please check the reCaptcha'); </script>";
-    	//exit;
-	}
+// 	if(isset($_REQUEST['g-recaptcha-response']))
+// 	{
+//     	$captcha = $_REQUEST['g-recaptcha-response'];
+// 	}
+// 	if(!$captcha)
+// 	{
+// 		echo "<script type='text/javascript'> alert('Please check the reCaptcha'); </script>";
+//     	//exit;
+// 	}
 //
 
-	else
-	{
+// 	else
+//	{
 		$query = "SELECT * FROM login WHERE username='".$email."' and password='".$password."'"; 
 		$stmt = OCIParse($conn, $query); 
 		if(OCIExecute($stmt))
@@ -32,7 +32,7 @@ if(isset($_REQUEST['login']))
 		{
 			echo "<script>alert('password or email is wrong')</script>";
 		}
-	}
+//	}
 
 }
 ?>
