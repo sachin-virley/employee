@@ -27,10 +27,10 @@
     if(isset($_REQUEST['submit_db']))
 	{
         $emp_id = $_REQUEST['empid'];
-		$first_name = $_REQUEST['firstname'];
+	$first_name = $_REQUEST['firstname'];
         $last_name = $_REQUEST['lastname'];
 
-        $query = "INSERT INTO employees(employee_id, firstname, lastname) VALUES ('".$emp_id."', '".$first_name."', '".$last_name."')";
+        $query = "INSERT INTO EMPLOYEES(EMPLOYEE_ID, FIRSTNAME, LASTNAME) VALUES ('".$emp_id."', '".$first_name."', '".$last_name."')";
         $stmt = OCIParse($conn, $query); 		
         oci_execute($stid);
     }
