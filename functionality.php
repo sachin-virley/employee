@@ -9,7 +9,9 @@
     include('db.php');
 
 	if(isset($_REQUEST["find"]))
-    {
+		
+		$count = 1;
+    		{
 		$table = "<h3 style='text-align:center'>FOLLOWING DATA IS CAPTURED</h3>";
 		$table .= "<table cellpadding='10' text-align=center border=1 width='100%'>";
 		$table .= "<thead><tr><th>#</th><th>Employee ID</th><th>First Name</th><th>Last Name</th></tr></thead><tbody>";
@@ -33,8 +35,6 @@
 
 		$current_data = file_get_contents('employees.json');
 		$array_data = json_decode($current_data,true);
-
-		$count = 1;
 				
 		$flag = 0;
 		foreach ($array_data as $item) 
