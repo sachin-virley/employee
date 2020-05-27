@@ -15,7 +15,7 @@
 		$table .= "<thead><tr><th>#</th><th>Employee ID</th><th>First Name</th><th>Last Name</th></tr></thead><tbody>";
 
 		$search = $_REQUEST["q"];
-		$query = "SELECT * FROM login WHERE LASTNAME like '$search' or FIRSTNAME like '$search'"; 
+		$query = "SELECT * FROM employees WHERE LASTNAME like '$search' or FIRSTNAME like '$search'"; 
 		$stmt = OCIParse($conn, $query); 
 		if(OCIExecute($stmt))
 		{
