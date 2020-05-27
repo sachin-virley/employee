@@ -48,7 +48,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-        <table border=1 width=100% cellpadding="10">
+        <table width=100% cellpadding="10">
                 <tr style="border-style:hidden">
                     <td height="100" width="20%">
                         <font size="40" color="brown" ></font>
@@ -69,7 +69,7 @@
                 </tr>
 
                 <tr>
-                    <td style='text-align:center' height="100" width="75%" colspan=4>
+                    <td style='text-align:center' height="100" width="75%">
                         <b>EMPLOYEE ID :</b> <input type="number" id="empid" name="empid" required placeholder="Employee ID">
                         <b>FIRST NAME</b> : <input type="text" id="firstname" name="firstname" required placeholder="First Name">
                         <b>LAST NAME :</b>  <input type="text" id="lastname" name="lastname" required placeholder="Last Name">
