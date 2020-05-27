@@ -32,7 +32,7 @@
 
         $query = "INSERT INTO EMPLOYEES(EMPLOYEE_ID, FIRSTNAME, LASTNAME) VALUES ('".$emp_id."', '".$first_name."', '".$last_name."')";
         $stmt = OCIParse($conn, $query); 		
-        oci_execute($stid);
+        OCIExecute($stid);
     }
 ?>
 
