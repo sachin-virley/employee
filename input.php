@@ -127,7 +127,7 @@
                     }
                     else
                     {
-                        $.post("functionality.php",
+                        $.post("input.php",
                         {                        
                                 submit_db: "true",
                                 empid: $("#empid").val(),
