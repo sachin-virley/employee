@@ -1,9 +1,10 @@
 <?php
+error_reporting(0);
     session_start();
     if(!isset($_SESSION['alogin']))
     {
 		echo "<script>alert('Please Login First')</script>";
-        header('Location: index.php');
+        echo "<script type='text/javascript'> document.location = 'index.php'; </script>";
 	}
 
 	else
@@ -15,7 +16,7 @@
 
 		$current_data = file_get_contents('employees.json');
 		$array_data = json_decode($current_data,true);
-	}
+	
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -99,3 +100,5 @@
     </section>
 </body>
 </html>
+<?php
+	} ?>
