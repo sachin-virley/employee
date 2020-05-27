@@ -1,10 +1,12 @@
 <?php
+error_reporting(0);
     session_start();
     if(!isset($_SESSION['alogin']))
     {
 		echo "<script>alert('Please Login First')</script>";
-        header('Location: index.php');
+        echo "<script type='text/javascript'> document.location = 'index.php'; </script>";
     }
+else{
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -57,3 +59,4 @@
     </table>
 </body>
 </html>
+<?php } ?>
