@@ -78,10 +78,8 @@
         
                 
                 <tr>
-                    <td style="background-color:brown"></td>
                     <td style='text-align:center'><button class="btn btn-primary" id="submit_in_db" type="button">Add to employees table</button></td>
                     <td style='text-align:center'><button class="btn btn-primary" id="submit_in_json" type="button">Add to employees.json</button></td>
-                    <td style="background-color:brown"></td>
                 </tr>
             </table>
 
