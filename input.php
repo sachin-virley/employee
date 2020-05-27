@@ -31,7 +31,10 @@
         $last_name = $_REQUEST['lastname'];
 
         $stid = oci_parse($conn, 'INSERT INTO employees(employee_id, firstname, lastname) VALUES ("$emp_id", "$first_name", "$last_name")');
-	oci_execute($stid);
+	if(oci_execute($stid))
+	{
+		echo "success";
+	}
     }
 ?>
 
