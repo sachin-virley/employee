@@ -94,7 +94,7 @@
                     }
                     else
                     {
-                        $.post("functionality.php",
+                        $.post("input.php",
                         {
                                 submit_json: "true",
                                 empid: $("#empid").val(),
