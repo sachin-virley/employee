@@ -86,9 +86,9 @@
 		{
             echo "<tr>";
             echo "<td style='text-align:center'>".$count++."</td>";
-            echo "<td style='text-align:center'>".(OCIResult($stmt,"employee_id"))."</td>";
-            echo "<td style='text-align:center'>".(OCIResult($stmt,"firstname"))."</td>";
-            echo "<td style='text-align:center'>".(OCIResult($stmt,"lastname"))."</td>";
+            echo "<td style='text-align:center'>".(OCIResult($stmt,"EMPLOYEE_ID"))."</td>";
+            echo "<td style='text-align:center'>".(OCIResult($stmt,"FIRSTNAME"))."</td>";
+            echo "<td style='text-align:center'>".(OCIResult($stmt,"LASTNAME"))."</td>";
             echo "</tr>";
         }
     }
