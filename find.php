@@ -20,7 +20,7 @@
         <table border=1 width=100% cellpadding="10">
             <tr style="border-style:hidden">
                 <td height="100" width="20%">
-                    <font size="40" color="brown" > KUNICA's FRIEND</font>
+                    <font size="40" color="brown" ></font>
                 </td>
                 <td style='text-align:center' height="100" width="60%" colspan=2>
                     <font size="30" color="brown" >SEARCH EMPLOYEE DATA</font>
