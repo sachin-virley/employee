@@ -30,9 +30,8 @@
 	$first_name = $_REQUEST['firstname'];
         $last_name = $_REQUEST['lastname'];
 
-        $query = "INSERT INTO EMPLOYEES(EMPLOYEE_ID, FIRSTNAME, LASTNAME) VALUES ('$emp_id', '$first_name', '$last_name')";
-        $stmt = OCIParse($conn, $query); 		
-        OCIExecute($stid);
+        $stid = oci_parse($conn, 'INSERT INTO employees(employee_id, firstname, lastname) VALUES ("$emp_id", "$first_name", "$last_name")');
+	oci_execute($stid);
     }
 ?>
 
