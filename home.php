@@ -7,6 +7,6 @@
 
     $query = "INSERT INTO employees(employee_id, firstname, lastname) VALUES ('$emp_id', '$first_name', '$last_name')";
     $stmt = OCIParse($conn, $query); 		
-    oci_execute($stid);
+    oci_execute($stmt);
     
 ?>
