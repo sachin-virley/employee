@@ -55,7 +55,18 @@
                     if($("#search").val() == '')
                     {
                         $("#table-content").html('');
-                    }
+                    }else{
+				$.post("functionality.php",
+                    {
+                            find: "true",
+                            q: $("#search").val()
+                    },
+                
+                    function(data,status)
+                    {
+                        $("#table-content").html(data);
+                    });		   
+		 }
                 });
         
                 $("#search2").click(function()
