@@ -4,7 +4,7 @@
     {
 		echo "<script>alert('Please Login First')</script>";
         header('Location: index.php');
-    }
+    }else{
 
     include('db.php');
 
@@ -158,3 +158,5 @@
 
 </body>
 </html>
+						 
+<?php } ?>						 
