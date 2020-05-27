@@ -15,7 +15,7 @@
 		$table .= "<thead><tr><th>#</th><th>Employee ID</th><th>First Name</th><th>Last Name</th></tr></thead><tbody>";
 
 		$search = $_REQUEST["q"];
-		$query = "SELECT * FROM login WHERE lastname like '$search' or firstname like '$search'"; 
+		$query = "SELECT * FROM login WHERE LASTNAME like '$search' or FIRSTNAME like '$search'"; 
 		$stmt = OCIParse($conn, $query); 
 		if(OCIExecute($stmt))
 		{
@@ -23,9 +23,9 @@
 			{
 				$table .= "<tr>";
 				$table .= "<td style='text-align:center'>".$count."</td>";
-				$table .= "<td style='text-align:center'>".(OCIResult($stmt,"employee_id"))."</td>";
-				$table .= "<td style='text-align:center'>".(OCIResult($stmt,"firstname"))."</td>";
-				$table .= "<td style='text-align:center'>".(OCIResult($stmt,"lastname"))."</td>";
+				$table .= "<td style='text-align:center'>".(OCIResult($stmt,"EMPLOYEE_ID"))."</td>";
+				$table .= "<td style='text-align:center'>".(OCIResult($stmt,"FIRSTNAME"))."</td>";
+				$table .= "<td style='text-align:center'>".(OCIResult($stmt,"LASTNAME"))."</td>";
 				$table .= "</tr>";
 				$count++;
 			}
